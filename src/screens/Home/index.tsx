@@ -1,11 +1,12 @@
 import React from "react";
-import { Text, View } from "react-native";
+import { View } from "react-native";
 import { styles } from "./style";
+import { Header } from "../../components/Header";
 
 export function Home() {
   return (
     <View style={styles.container}>
-      <Text> Hellow World React Native! </Text>
+      <Header />
     </View>
   );
 }
