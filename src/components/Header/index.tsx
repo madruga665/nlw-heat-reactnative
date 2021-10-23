@@ -1,15 +1,20 @@
 import React from "react";
-import { View, Text, TouchableOpacity } from "react-native";
 import LogoSvg from "../../assets/logo.svg";
+import { View, Text, TouchableOpacity } from "react-native";
+import { UserPhoto } from "../UserPhoto";
 import { styles } from "./styles";
 
 export function Header() {
   return (
     <View style={styles.container}>
       <LogoSvg />
-      <TouchableOpacity>
-        <Text style={styles.logoutText}>Sair</Text>
-      </TouchableOpacity>
+      <View style={styles.logoutButton}>
+        <TouchableOpacity>
+          <Text style={styles.logoutText}>Sair</Text>
+        </TouchableOpacity>
+
+        <UserPhoto imageUri='https://github.com/madruga665.png' />
+      </View>
     </View>
   );
 }
